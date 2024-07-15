@@ -5,7 +5,7 @@
 * 동기와 비동기 방식 차이
 자바스크립트를 처리할 때 동기와 비동기 방식 처리를 잘 이해하고 만드는 것이 중요합니다. ​내가 어떤 처리를  순차적으로 처리할 때는 동기 방식을 사용해야 하고 ​하는 것마다 빨리 처리해야할 때는 비동기 방식을 사용해야 합니다.
 
-
+***
 > fetch
 ```fetch
 fetch('http://example.com/data')
@@ -31,7 +31,7 @@ fetch('http://example.com/post', {
 * fetch 방식의 ajax는 비교적 최근에 만들어졌습니다. 그렇기에 지원되지 않는 브라우저가 존재하며 이를 해결하려면 axios 혹은 jquery 를 사용하셔야 합니다.
 * fetch는 Promise를 반환하므로, .then()과 .catch()를 사용하여 응답과 오류를 처리할 수 있습니다.
 
-
+***
 > Axios
 ``` axios
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
@@ -47,6 +47,7 @@ axios.post('http://example.com/post', { key1: 'value1', key2: 'value2' })
 
 * Axios 테스트 하기 위해 CDN 방식으로 진행. 실제 운영할 때는 직접 다운받아 include 할 것.
 
+***
 > jQuery
 ```
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -71,3 +72,4 @@ $.ajax({
 ```
 
 * 더이상 jQuery 는 사용하지 않음. 단지 레거시 코드로 어쩔 수 없이 사용해야 하는 경우 알아야 겠음. 
+***
