@@ -6,7 +6,7 @@
 자바스크립트를 처리할 때 동기와 비동기 방식 처리를 잘 이해하고 만드는 것이 중요합니다. ​내가 어떤 처리를  순차적으로 처리할 때는 동기 방식을 사용해야 하고 ​하는 것마다 빨리 처리해야할 때는 비동기 방식을 사용해야 합니다.
 
 
-1. fetch
+> fetch
 ```fetch
 fetch('http://example.com/data')
   .then(response => response.json()) // 응답을 JSON 형태로 변환
@@ -14,7 +14,7 @@ fetch('http://example.com/data')
   .catch(error => console.error('Error:', error)); // 오류 처리
 ```
 
-1-1. fetch option
+>> fetch option
 ```fetch
 fetch('http://example.com/post', {
   method: 'POST', // HTTP 메소드 지정
@@ -32,7 +32,7 @@ fetch('http://example.com/post', {
 * fetch는 Promise를 반환하므로, .then()과 .catch()를 사용하여 응답과 오류를 처리할 수 있습니다.
 
 
-2. Axios
+> Axios
 ``` axios
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
@@ -47,7 +47,7 @@ axios.post('http://example.com/post', { key1: 'value1', key2: 'value2' })
 
 * Axios 테스트 하기 위해 CDN 방식으로 진행. 실제 운영할 때는 직접 다운받아 include 할 것.
 
-3. jQuery
+> jQuery
 ```
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
